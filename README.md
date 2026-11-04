@@ -6,6 +6,14 @@
 
 灵感来自 [realtime-salary](https://github.com/Mereithhh/realtime-salary)，重做了 UI，并加入了完整的驴拉磨动画互动区。
 
+## ⬇️ 下载
+
+Windows 免安装便携版（v1.0.0）：
+
+**[下载 NiuMa-Encourager-1.0.0.exe](https://github.com/Liushun94/niuma-encourager/releases/latest)**
+
+> 未做代码签名，首次运行如提示「未知发布者」，选择「更多信息 → 仍要运行」即可。
+
 ## ✨ 有什么
 
 - **实时工资**：按秒结算，支持年薪 / 月薪 / 周薪 / 时薪，自定义每天工时与年节假日天数。
@@ -38,13 +46,11 @@ npm run dist
 
 输出在 `release/` 目录，文件名形如 `牛马鼓励器-1.0.0.exe`，是免安装的便携版 exe，双击即用。
 
-当前已打好的一版就在：
+`release/` 已被 git 忽略；已打包好的版本请到 GitHub Releases 下载：
 
-```
-release/牛马鼓励器-1.0.0.exe
-```
+https://github.com/Liushun94/niuma-encourager/releases/latest
 
-> 这个 exe 没做代码签名，Windows 首次运行时可能提示「未知发布者」。点「更多信息 → 仍要运行」即可，不影响功能。
+> 未做代码签名，Windows 首次运行时可能提示「未知发布者」。点「更多信息 → 仍要运行」即可，不影响功能。
 
 ## 🎮 怎么玩
 
