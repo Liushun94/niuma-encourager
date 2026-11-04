@@ -2,6 +2,8 @@
 
 > 把工资按秒磨出来，再让一头驴替你跑完这场马拉松。
 
+[![Release](https://github.com/Liushun94/niuma-encourager/actions/workflows/release.yml/badge.svg)](https://github.com/Liushun94/niuma-encourager/actions/workflows/release.yml)
+
 一个带互动的实时工资计算器：左边是精确到小数点后四位的进账数字，右边是一头围着磨盘转圈的驴。头顶的杆子挂着胡萝卜，驴永远差一点就吃到。
 
 灵感来自 [realtime-salary](https://github.com/Mereithhh/realtime-salary)，重做了 UI，并加入了完整的驴拉磨动画互动区。
@@ -51,6 +53,22 @@ npm run dist
 https://github.com/Liushun94/niuma-encourager/releases/latest
 
 > 未做代码签名，Windows 首次运行时可能提示「未知发布者」。点「更多信息 → 仍要运行」即可，不影响功能。
+
+### 自动发布新版本
+
+仓库包含 `.github/workflows/release.yml`，推 `v*` 标签会自动构建并发布：
+
+1. 修改 `package.json` 的 `version`（例如 `1.0.1`），提交代码。
+2. 打 tag 并推送：
+
+   ```bash
+   git tag v1.0.1
+   git push origin main --tags
+   ```
+
+3. GitHub Actions 会在 Windows runner 上构建便携版 exe，并把 `NiuMa-Encourager-1.0.1.exe` 附加到对应的 GitHub Release。
+
+建议 tag 与 `package.json` 的版本保持一致。也可以在 Actions 页面手动触发 `Release` 工作流，此时只构建并上传 workflow artifact，不创建 Release。
 
 ## 🎮 怎么玩
 
